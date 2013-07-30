@@ -1,5 +1,6 @@
 *~
 *.elc
+*.swp
 auto-save-list
 recentf
 savehist
@@ -15,6 +16,5 @@ custom.el
 places
 .smex-items
 savefile/
-/prelude-modules.el
 projectile-bookmarks.eld
 session*
