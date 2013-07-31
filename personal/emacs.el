@@ -15,6 +15,9 @@
 (global-linum-mode t)
 (setq linum-format "%3d\u2502")
 
+;; fringe
+'(fringe-mode (quote (2 . 8)) nil (fringe))
+
 ;; flymake indicators
 ;; each integer represents a row of pixels
 ;; the bits represent the pixel in a row
@@ -30,6 +33,6 @@
 ;;
 ;; is a horizontal bar
 (define-fringe-bitmap 'flycheck-fringe-exclamation-mark
-  [0 0 0 255 255 0 0 0] nil nil 'center)
+  [192 192 192 192 192 192 192 192] nil nil 'center)
 (define-fringe-bitmap 'question-mark
-  [0 0 0 255 255 0 0 0] nil nil 'center)
+  [0 0 0 192 192 0 0 0] nil nil 'center)
