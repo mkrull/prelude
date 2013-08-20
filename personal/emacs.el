@@ -36,3 +36,6 @@
   [192 192 192 192 192 192 192 192] nil nil 'center)
 (define-fringe-bitmap 'question-mark
   [0 0 0 192 192 0 0 0] nil nil 'center)
+
+;; google C/C++ style
+(add-hook 'c-mode-common-hook 'google-set-c-style)
