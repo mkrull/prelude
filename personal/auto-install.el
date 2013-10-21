@@ -5,5 +5,6 @@
 							auto-complete
 							google-c-style
 							htmlize
+                                                        workgroups2
 							))
 

@@ -3,6 +3,9 @@
 ;; solarized colors
 (load-theme 'solarized-dark t)
 
+;; add marmalade
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
+
 ;; auto complete
 (require 'auto-complete-config)
 (ac-config-default)
@@ -39,3 +42,7 @@
 
 ;; google C/C++ style
 (add-hook 'c-mode-common-hook 'google-set-c-style)
+
+(require 'workgroups2)
+;; change workgroups2 settings here
+(workgroups-mode 1)        ; put this one at the bottom of .emacs
