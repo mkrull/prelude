@@ -24,3 +24,6 @@
      (define-key ac-completing-map (kbd "C-g") 'ac-stop)
      (define-key ac-completing-map (kbd "ESC") 'evil-normal-state)
      (evil-make-intercept-map ac-completing-map)))
+
+;; nerd commenter default key bindings
+(evilnc-default-hotkeys)

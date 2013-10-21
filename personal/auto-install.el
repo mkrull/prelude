@@ -7,4 +7,5 @@
        htmlize
        workgroups2
        evil
+       evil-nerd-commenter
        ))
