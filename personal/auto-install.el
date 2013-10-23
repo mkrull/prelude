@@ -8,4 +8,5 @@
        workgroups2
        evil
        evil-nerd-commenter
+       elisp-cache
        ))
