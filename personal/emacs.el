@@ -9,7 +9,9 @@
     (set-frame-size frame w h)))
 
 ;; solarized colors
-(load-theme 'solarized-dark t)
+(if window-system
+    (load-theme 'solarized-dark t)
+)
 
 ;; add marmalade
 (add-to-list
@@ -58,6 +60,17 @@
 
 (arrange-frame 165 55 5 5)
 
+;; custom key bindings
+;; create custom prefix command and keys
+(define-prefix-command 'custom-keymap)
+(global-unset-key "\C-q")
+(global-set-key (kbd "\C-q") 'custom-keymap)
+(define-key custom-keymap (kbd "b k") 'kill-buffer-and-window)
+(define-key custom-keymap (kbd "l p") 'list-packages)
+
+;; run workgroups only with window system
 (require 'workgroups2)
-;; change workgroups2 settings here
-(workgroups-mode 1)        ; put this one at the bottom of .emacs
+(if window-system
+    ;; change workgroups2 settings here
+    (workgroups-mode 1)        ; put this one at the bottom of .emacs
+)

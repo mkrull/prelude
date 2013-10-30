@@ -9,4 +9,6 @@
        evil
        evil-nerd-commenter
        elisp-cache
+       go-mode
+       protobuf-mode
        ))
