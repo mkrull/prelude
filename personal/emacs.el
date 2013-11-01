@@ -13,14 +13,11 @@
     (load-theme 'solarized-dark t)
 )
 
-;; add marmalade
-(add-to-list
- 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
-
 ;; remove doc checks on elisp files
 (eval-after-load
     'flycheck '(setq flycheck-checkers
                      (delq 'emacs-lisp-checkdoc flycheck-checkers)))
+
 ;; auto complete
 (require 'auto-complete-config)
 (ac-config-default)
@@ -63,10 +60,18 @@
 ;; custom key bindings
 ;; create custom prefix command and keys
 (define-prefix-command 'custom-keymap)
-(global-unset-key "\C-q")
-(global-set-key (kbd "\C-q") 'custom-keymap)
+(global-unset-key "\C-c\C-p")
+(global-set-key (kbd "\C-c\C-p") 'custom-keymap)
 (define-key custom-keymap (kbd "b k") 'kill-buffer-and-window)
 (define-key custom-keymap (kbd "l p") 'list-packages)
+
+;; display time in the modeline for fullscreen convenience
+(setq display-time-string-forms
+      '((propertize (concat " " 24-hours ":" minutes " ")
+                    'face 'bold)))
+(display-time-mode 1)
+
+;; set font color for time more visible
 
 ;; run workgroups only with window system
 (require 'workgroups2)

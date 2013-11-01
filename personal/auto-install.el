@@ -1,3 +1,7 @@
+;; add marmalade
+(add-to-list
+ 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
+
 ;; additional packages to autoinstall by prelude
 (prelude-require-packages '(
        rainbow-delimiters
