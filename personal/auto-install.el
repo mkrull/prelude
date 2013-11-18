@@ -15,4 +15,5 @@
        elisp-cache
        go-mode
        protobuf-mode
+       yasnippet-bundle
        ))
