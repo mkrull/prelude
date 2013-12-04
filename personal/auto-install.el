@@ -7,13 +7,17 @@
        rainbow-delimiters
        color-theme-solarized
        auto-complete
-       google-c-style
        htmlize
        workgroups2
        evil
        evil-nerd-commenter
        elisp-cache
        go-mode
+       go-autocomplete
+       go-direx
        protobuf-mode
        yasnippet-bundle
+       golden-ratio
+       emmet-mode
+       ac-emmet
        ))

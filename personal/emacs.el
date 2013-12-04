@@ -30,9 +30,6 @@
 (global-linum-mode t)
 (setq linum-format "%3d\u2502")
 
-;; fringe
-'(fringe-mode (quote (2 . 8)) nil (fringe))
-
 ;; flymake indicators
 ;; each integer represents a row of pixels
 ;; the bits represent the pixel in a row
@@ -71,7 +68,8 @@
                     'face 'bold)))
 (display-time-mode 1)
 
-;; set font color for time more visible
+;; set k&r default style for C
+(setq c-default-style "k&r")
 
 ;; run workgroups only with window system
 (require 'workgroups2)
