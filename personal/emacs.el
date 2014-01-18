@@ -71,6 +71,9 @@
 ;; set k&r default style for C
 (setq c-default-style "k&r")
 
+;; set Terminus default font
+(set-default-font "Terminus-12")
+
 ;; run workgroups only with window system
 (require 'workgroups2)
 (if window-system
